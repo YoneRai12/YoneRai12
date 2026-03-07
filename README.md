@@ -112,3 +112,5 @@ Discord サーバー向けの荒らし対策 / セキュリティ系 Bot コー�
 ---
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=YoneRai12&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
+
+![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=YoneRai12&theme=tokyonight)
