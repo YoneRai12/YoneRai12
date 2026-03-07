@@ -105,6 +105,7 @@ Discord サーバー向けの荒らし対策 / セキュリティ系 Bot コー�
 
 - GitHub: [YoneRai12](https://github.com/YoneRai12)
 - YonerAI: [github.com/YoneRai12/YonerAI](https://github.com/YoneRai12/YonerAI)
+- Mail: [hello@yonerai.com](mailto:hello@yonerai.com)
 - Qiita: [qiita.com/YoneRai12](https://qiita.com/YoneRai12)
 - X: [x.com/YoneRai12](https://x.com/YoneRai12)
 
