@@ -1,51 +1,113 @@
+# YoneRai12
 
+ローカルファーストな AI システム、Discord ネイティブな AI、Node + Relay + Core のような構成を考えて作っています。
 
-# 👋 ヨネライ (YoneRai)
+今いちばん力を入れているのは **YonerAI** です。
+これは、まず自分のPCで動くことを前提にした AI システムで、単なるチャットUIではなく、
 
-> “未来の学びは、自分で切り拓くもの。”  
+- Discord Bot
+- Web UI
+- Core
+- Relay
+- tools / skills
+- approvals / audit
 
----
-
-## 🔭 今取り組んでいること
-- 🤖 **ORA (Optimized Reasoning Assistant) の開発**  
-  - Discord Bot 統合、iOS/macOS アプリ版、リアルタイムTTS翻訳機能  
-- 🖥️ **リモートPCコントローラ**  
-  - FastAPI＋Swift で BlenderレンダリングやAI推論ジョブを遠隔操作  
-- 🎮 RTX 5080×2 で4Kレイトレーシングゲーム & on-premise AI
-
----
-
-## 💡 スキルセット
-
-| 分野           | 技術スタック                                        |
-| -------------- | --------------------------------------------------- |
-| 🐍 言語        | Python, JavaScript (Next.js, Node.js), Swift        |
-| 🤖 AI/機械学習  | LLMチューニング(LoRA), Transformers, CUDA, FastAPI  |
-| 🎨 3Dモデリング | Blender, Unreal Engine 5, Unity                     |
-| 📦 インフラ     | Docker, GitHub Actions, AWS, GCP                    |
-| 🎨 Web/UI      | Tailwind CSS, GSAP, Figma                           |
+まで含めて組んでいます。
 
 ---
 
-## 🚀 主要プロジェクト
+## 今やっていること
 
-- **ORA**  
-  - 自分専用AI秘書エージェント。会話・情報収集・ToDo管理を自動化。
-- **ora-remote-controller**  
-  - iPhoneで自宅PCのBlenderやAIジョブを起動／監視できるアプリ。
-- **ChatTTS Translator GUI**  
-  - 英語音声→リアルタイム日本語字幕＆音声翻訳デスクトップアプリ。
-
----
-
-## 📈 GitHub統計
-
-![ヨネライのGitHubステータス](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight)
+- **YonerAI の公開版 Node を整理すること**
+  - ユーザーのPCで動く、配布可能な YonerAI 側を整備中
+- **YonerAI の private 側を分離すること**
+  - VPS、商業運用、公式Web、運用AI を分けて設計中
+- **Discord / PC / operator 系の AI 体験を作ること**
+  - 日常で使える AI と、実際に動く AI をつなげたい
+- **ローカル実行と hybrid 構成の両立**
+  - 自分のPCに住むAIと、VPSの control plane を両立できる形を考えている
 
 ---
 
-## 📫 連絡先
+## Flagship Project
 
-- ✉️ Twitter: [@YoneRai12](https://twitter.com/YoneRai12)  
-- 💼 Qiita: [YoneRai12](https://qiita.com/YoneRai12)  
-- 📫 E-mail: your.email@example.com
+### [YonerAI](https://github.com/YoneRai12/YonerAI)
+
+YonerAI は、ローカルファーストな AI Node / AI operator を目指して作っているプロジェクトです。
+
+今の公開版では主に次を扱っています。
+
+- Discord ベースの AI runtime
+- FastAPI ベースの admin / setup API
+- optional Core による routing / reasoning 分離
+- web chat / dashboard UI
+- Relay を使った pairing / proxy の土台
+- tool 実行の risk scoring / approval / audit
+- MCP や local skills による拡張
+
+長期的には、
+
+- public 側の配布 Node
+- private 側の VPS / 商業運用 / `yonerai.com`
+
+を明確に分けていく方針です。
+
+---
+
+## ほかの公開プロジェクト
+
+### [Minecraft-AI-Bedrock-Edition](https://github.com/YoneRai12/Minecraft-AI-Bedrock-Edition)
+Minecraft と AI の組み合わせを試しているプロジェクト。
+
+### [RTX5090-DebugSystem](https://github.com/YoneRai12/RTX5090-DebugSystem)
+GPU / 実行環境 / デバッグ系の実験用プロジェクト。
+
+### [Discord-Measures-against-vandalism-YoneRai12](https://github.com/YoneRai12/Discord-Measures-against-vandalism-YoneRai12)
+Discord サーバー向けの荒らし対策 / セキュリティ系 Bot コード。
+
+---
+
+## 関心のある領域
+
+- ローカルファースト AI
+- Discord ネイティブな AI 体験
+- AI agent / tool calling / approval / audit
+- Node + Relay + Core の分離構成
+- Windows / VPS / hybrid deployment
+- 実際に使われる泥臭い自動化
+
+---
+
+## 技術スタック
+
+| 分野 | 主に使うもの |
+| --- | --- |
+| 言語 | Python, TypeScript / JavaScript |
+| AI / Runtime | LLM routing, tool calling, MCP, local-first AI |
+| Backend | FastAPI, WebSocket, relay patterns |
+| Frontend | Next.js, dashboard / web UI |
+| Infra / Ops | GitHub Actions, VPS, Cloudflare, deployment flows |
+| その他 | Discord bots, automation, GPU / local runtime 周り |
+
+---
+
+## 作り方の方針
+
+- まず自分で使いたいものを作る
+- ただのラッパーではなく、システムとして骨格から考える
+- public と private の境界を意識する
+- 実際に動くものを優先する
+- 後から派生できる土台を残す
+
+---
+
+## Links
+
+- GitHub: [YoneRai12](https://github.com/YoneRai12)
+- YonerAI: [github.com/YoneRai12/YonerAI](https://github.com/YoneRai12/YonerAI)
+- Qiita: [qiita.com/YoneRai12](https://qiita.com/YoneRai12)
+- X: [x.com/YoneRai12](https://x.com/YoneRai12)
+
+---
+
+![YoneRai12 GitHub stats](https://github-readme-stats.vercel.app/api?username=YoneRai12&show_icons=true&theme=tokyonight)
