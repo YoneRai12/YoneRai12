@@ -111,6 +111,16 @@ Discord サーバー向けの荒らし対策 / セキュリティ系 Bot コー�
 
 ---
 
-[![GitHub Streak](https://streak-stats.demolab.com/?user=YoneRai12&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
+<p align="center">
+  <img src="https://streak-stats.demolab.com/?user=YoneRai12&theme=tokyonight&hide_border=true" alt="GitHub Streak" height="170" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=YoneRai12&theme=tokyonight" alt="GitHub Stats" height="170" />
+</p>
 
-![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=YoneRai12&theme=tokyonight)
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=YoneRai12&theme=tokyonight" alt="Top Languages" height="170" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=YoneRai12&theme=tokyonight" alt="Most Commit Language" height="170" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=YoneRai12&theme=tokyonight" alt="Profile Summary" width="100%" />
+</p>
