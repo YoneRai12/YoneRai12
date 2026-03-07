@@ -39,6 +39,9 @@
   </a>
 </p>
 
+> `yonerai.com` は現在メンテナンス中です。最大で **2026年3月31日** まで継続予定ですが、不定期に早めに終了する場合があります。  
+> `yonerai.com` is currently under maintenance. It may continue until **March 31, 2026** at the latest, but maintenance may also end earlier without a fixed schedule.
+
 ---
 
 ## 🇯🇵 日本語プロフィール
