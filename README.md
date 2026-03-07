@@ -1,9 +1,46 @@
-# YoneRai12
+<h1 align="center">YoneRai12</h1>
+
+<p align="center">
+  <strong>Local-first AI systems • Discord-native AI • Node + Relay + Core</strong>
+</p>
+
+<p align="center">
+  Building <strong>YonerAI</strong>: a local-first AI runtime designed to live on your own PC first,
+  then expand into hybrid and platform-style systems.
+</p>
+
+<p align="center">
+  <a href="#-日本語プロフィール">
+    <img src="https://img.shields.io/badge/JP-日本語-2563EB?style=for-the-badge" alt="Japanese Profile" />
+  </a>
+  <a href="#-english-profile">
+    <img src="https://img.shields.io/badge/EN-English-111827?style=for-the-badge" alt="English Profile" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/YoneRai12/YonerAI">
+    <img src="https://img.shields.io/badge/Flagship-YonerAI-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="YonerAI" />
+  </a>
+  <a href="mailto:hello@yonerai.com">
+    <img src="https://img.shields.io/badge/Contact-hello%40yonerai.com-16A34A?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact" />
+  </a>
+  <a href="https://x.com/YoneRai12">
+    <img src="https://img.shields.io/badge/X-@YoneRai12-111111?style=for-the-badge&logo=x&logoColor=white" alt="X" />
+  </a>
+  <a href="https://qiita.com/YoneRai12">
+    <img src="https://img.shields.io/badge/Qiita-YoneRai12-55C500?style=for-the-badge&logo=qiita&logoColor=white" alt="Qiita" />
+  </a>
+</p>
+
+---
+
+## 🇯🇵 日本語プロフィール
 
 ローカルファーストな AI システム、Discord ネイティブな AI、Node + Relay + Core のような構成を考えて作っています。
 
 今いちばん力を入れているのは **YonerAI** です。
-これは、まず自分のPCで動くことを前提にした AI システムで、単なるチャットUIではなく、
+YonerAI は、まず自分のPCで動くことを前提にした AI システムで、単なるチャットUIではなく、
 
 - Discord Bot
 - Web UI
@@ -14,9 +51,7 @@
 
 まで含めて組んでいます。
 
----
-
-## 今やっていること
+### 今やっていること
 
 - **YonerAI の公開版 Node を整理すること**
   - ユーザーのPCで動く、配布可能な YonerAI 側を整備中
@@ -27,11 +62,9 @@
 - **ローカル実行と hybrid 構成の両立**
   - 自分のPCに住むAIと、VPSの control plane を両立できる形を考えている
 
----
+### Flagship Project
 
-## Flagship Project
-
-### [YonerAI](https://github.com/YoneRai12/YonerAI)
+#### [YonerAI](https://github.com/YoneRai12/YonerAI)
 
 YonerAI は、ローカルファーストな AI Node / AI operator を目指して作っているプロジェクトです。
 
@@ -54,50 +87,78 @@ YonerAI は、ローカルファーストな AI Node / AI operator を目指し�
 
 ---
 
-## ほかの公開プロジェクト
+## 🌍 English Profile
+
+I build local-first AI systems, Discord-native AI workflows, and architectures around Node + Relay + Core.
+
+My main project right now is **YonerAI**.
+It is a local-first AI system designed to run on a personal PC first, while still growing toward hybrid and platform-style deployment later.
+
+YonerAI is not just a chat UI. It currently includes:
+
+- a Discord-based runtime
+- web/admin surfaces
+- an optional Core process
+- relay foundations
+- tools / skills
+- approvals / audit boundaries
+
+### Current Focus
+
+- making the public YonerAI node cleaner and easier to distribute
+- separating the private VPS / commercial / official web side
+- building AI experiences that connect Discord, PC workflows, and operator-style execution
+- keeping both local-first and hybrid deployment paths viable
+
+---
+
+## Public Projects
+
+### [YonerAI](https://github.com/YoneRai12/YonerAI)
+Local-first AI node / AI operator project.
 
 ### [Minecraft-AI-Bedrock-Edition](https://github.com/YoneRai12/Minecraft-AI-Bedrock-Edition)
-Minecraft と AI の組み合わせを試しているプロジェクト。
+Experiments around Minecraft and AI.
 
 ### [RTX5090-DebugSystem](https://github.com/YoneRai12/RTX5090-DebugSystem)
-GPU / 実行環境 / デバッグ系の実験用プロジェクト。
+GPU / runtime / debugging oriented experiments.
 
 ### [Discord-Measures-against-vandalism-YoneRai12](https://github.com/YoneRai12/Discord-Measures-against-vandalism-YoneRai12)
-Discord サーバー向けの荒らし対策 / セキュリティ系 Bot コード。
+Security / anti-vandalism bot code for Discord communities.
 
 ---
 
-## 関心のある領域
+## Interests
 
-- ローカルファースト AI
-- Discord ネイティブな AI 体験
-- AI agent / tool calling / approval / audit
-- Node + Relay + Core の分離構成
+- local-first AI
+- Discord-native AI experiences
+- AI agents / tool calling / approval / audit
+- Node + Relay + Core separation
 - Windows / VPS / hybrid deployment
-- 実際に使われる泥臭い自動化
+- practical, messy, real-world automation
 
 ---
 
-## 技術スタック
+## Tech Stack
 
-| 分野 | 主に使うもの |
+| Area | Main Stack |
 | --- | --- |
-| 言語 | Python, TypeScript / JavaScript |
+| Languages | Python, TypeScript / JavaScript |
 | AI / Runtime | LLM routing, tool calling, MCP, local-first AI |
 | Backend | FastAPI, WebSocket, relay patterns |
 | Frontend | Next.js, dashboard / web UI |
 | Infra / Ops | GitHub Actions, VPS, Cloudflare, deployment flows |
-| その他 | Discord bots, automation, GPU / local runtime 周り |
+| Other | Discord bots, automation, GPU / local runtime work |
 
 ---
 
-## 作り方の方針
+## Build Philosophy
 
-- まず自分で使いたいものを作る
-- ただのラッパーではなく、システムとして骨格から考える
-- public と private の境界を意識する
-- 実際に動くものを優先する
-- 後から派生できる土台を残す
+- build things I actually want to use
+- think in terms of systems, not just wrappers
+- keep public and private boundaries explicit
+- prioritize working software
+- leave room for future derived products
 
 ---
 
