@@ -1,12 +1,15 @@
 <h1 align="center">YoneRai12</h1>
 
 <p align="center">
-  <strong>Local-first AI systems • Discord-native AI • Node + Relay + Core</strong>
+  <strong>自分のPCに住むAIを作る開発者</strong>
 </p>
 
 <p align="center">
-  Building <strong>YonerAI</strong>: a local-first AI runtime designed to live on your own PC first,
-  then expand into hybrid and platform-style systems.
+  <em>Builder of AI that lives on your own PC.</em>
+</p>
+
+<p align="center">
+  Building <strong>YonerAI</strong> and related local-first / hybrid AI systems.
 </p>
 
 <p align="center">
@@ -19,11 +22,14 @@
 </p>
 
 <p align="center">
+  <a href="https://yonerai.com">
+    <img src="https://img.shields.io/badge/Website-yonerai.com-2563EB?style=for-the-badge" alt="Website" />
+  </a>
   <a href="https://github.com/YoneRai12/YonerAI">
-    <img src="https://img.shields.io/badge/Flagship-YonerAI-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="YonerAI" />
+    <img src="https://img.shields.io/badge/Project-YonerAI-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Project YonerAI" />
   </a>
   <a href="mailto:hello@yonerai.com">
-    <img src="https://img.shields.io/badge/Contact-hello%40yonerai.com-16A34A?style=for-the-badge&logo=gmail&logoColor=white" alt="Contact" />
+    <img src="https://img.shields.io/badge/Mail-hello%40yonerai.com-16A34A?style=for-the-badge&logo=gmail&logoColor=white" alt="Mail" />
   </a>
   <a href="https://x.com/YoneRai12">
     <img src="https://img.shields.io/badge/X-@YoneRai12-111111?style=for-the-badge&logo=x&logoColor=white" alt="X" />
@@ -37,7 +43,7 @@
 
 ## 🇯🇵 日本語プロフィール
 
-ローカルファーストな AI システム、Discord ネイティブな AI、Node + Relay + Core のような構成を考えて作っています。
+自分のPCに住むAIを作っています。
 
 今いちばん力を入れているのは **YonerAI** です。
 YonerAI は、まず自分のPCで動くことを前提にした AI システムで、単なるチャットUIではなく、
@@ -89,7 +95,7 @@ YonerAI は、ローカルファーストな AI Node / AI operator を目指し�
 
 ## 🌍 English Profile
 
-I build local-first AI systems, Discord-native AI workflows, and architectures around Node + Relay + Core.
+I build AI that lives on your own PC.
 
 My main project right now is **YonerAI**.
 It is a local-first AI system designed to run on a personal PC first, while still growing toward hybrid and platform-style deployment later.
@@ -165,6 +171,7 @@ Security / anti-vandalism bot code for Discord communities.
 ## Links
 
 - GitHub: [YoneRai12](https://github.com/YoneRai12)
+- Website: [yonerai.com](https://yonerai.com)
 - YonerAI: [github.com/YoneRai12/YonerAI](https://github.com/YoneRai12/YonerAI)
 - Mail: [hello@yonerai.com](mailto:hello@yonerai.com)
 - Qiita: [qiita.com/YoneRai12](https://qiita.com/YoneRai12)
