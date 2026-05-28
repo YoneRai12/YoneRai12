@@ -1,15 +1,15 @@
 <h1 align="center">YoneRai12</h1>
 
 <p align="center">
-  <strong>自分のPCに住むAIを作る開発者</strong>
+  <strong>YonerAI を作っています。</strong>
 </p>
 
 <p align="center">
-  <em>Builder of AI that lives on your own PC.</em>
+  <em>Building a provider-independent AI runtime foundation.</em>
 </p>
 
 <p align="center">
-  Building <strong>YonerAI</strong> and related local-first / hybrid AI systems.
+  AI を、1社のUIではなく、公式・ローカル・self-host を横断して続く実行基盤へ。
 </p>
 
 <p align="center">
@@ -22,11 +22,11 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/YoneRai12/YonerAI">
+    <img src="https://img.shields.io/badge/YonerAI-provider--independent-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="YonerAI" />
+  </a>
   <a href="https://yonerai.com">
     <img src="https://img.shields.io/badge/Website-yonerai.com-2563EB?style=for-the-badge" alt="Website" />
-  </a>
-  <a href="https://github.com/YoneRai12/YonerAI">
-    <img src="https://img.shields.io/badge/Project-YonerAI-0F172A?style=for-the-badge&logo=github&logoColor=white" alt="Project YonerAI" />
   </a>
   <a href="mailto:hello@yonerai.com">
     <img src="https://img.shields.io/badge/Mail-hello%40yonerai.com-16A34A?style=for-the-badge&logo=gmail&logoColor=white" alt="Mail" />
@@ -39,112 +39,154 @@
   </a>
 </p>
 
-> `yonerai.com` は現在メンテナンス中です。最大で **2026年3月31日** まで継続予定ですが、不定期に早めに終了する場合があります。
-> `yonerai.com` is currently under maintenance. It may continue until **March 31, 2026** at the latest, but maintenance may also end earlier without a fixed schedule.
-
 ---
 
 ## 🇯🇵 日本語プロフィール
 
-自分のPCに住むAIを作っています。
+AI を、単なるチャット UI ではなく、長く使い続けられる実行基盤として作っています。
 
-今いちばん力を入れているのは **YonerAI** です。
-YonerAI は、まず自分のPCで動くことを前提にした AI システムで、単なるチャットUIではなく、
+現在の中心プロジェクトは **YonerAI** です。
 
-- Discord Bot
-- Web UI
-- Core
-- Relay
-- tools / skills
-- approvals / audit
+YonerAI は、公式サービス、ローカル環境、self-host 環境のどれを使っても、できるだけ同じ AI 体験と同じ契約で動かすための **provider-independent AI runtime foundation** です。
 
-まで含めて組んでいます。
+単なる Discord Bot でも、単なる model router でもありません。
 
-### 今やっていること
+設計の中心に置いているものは、モデルそのものよりも、
 
-- **YonerAI の公開版 Node を整理すること**
-  - ユーザーのPCで動く、配布可能な YonerAI 側を整備中
-- **YonerAI の private 側を分離すること**
-  - VPS、商業運用、公式Web、運用AI を分けて設計中
-- **Discord / PC / operator 系の AI 体験を作ること**
-  - 日常で使える AI と、実際に動く AI をつなげたい
-- **ローカル実行と hybrid 構成の両立**
-  - 自分のPCに住むAIと、VPSの control plane を両立できる形を考えている
+- provider independence
+- same experience across official / local / self-host
+- public / private / control-plane boundary
+- API / CLI / Web / Discord surface separation
+- typed action / approval / audit
+- local Core API
+- mock / offline / loopback local LLM runtime
+- self-evolution as approval-gated product intelligence
 
-### Flagship Project
+です。
 
-#### [YonerAI](https://github.com/YoneRai12/YonerAI)
+### 今の YonerAI
 
-YonerAI は、ローカルファーストな AI Node / AI operator を目指して作っているプロジェクトです。
+現在の公開 repo は、完成済み製品ではなく、公開可能な core / contract / runtime boundary を育てている段階です。
 
-今の公開版では主に次を扱っています。
+今の public MVP で扱っている主な範囲は次です。
 
-- Discord ベースの AI runtime
-- FastAPI ベースの admin / setup API
-- optional Core による routing / reasoning 分離
-- web chat / dashboard UI
-- Relay を使った pairing / proxy の土台
-- tool 実行の risk scoring / approval / audit
-- MCP や local skills による拡張
+- local Core API health smoke
+- mock / offline message contract
+- loopback-only local LLM conversation path
+- CLI client
+- Web Chat MVP / smoke-demo surface
+- public-safe API / event / capability contracts
+- approval / audit / boundary-first architecture
+- provider-independent runtime direction
 
-長期的には、
+一方で、次はまだ完成済みとは主張していません。
 
-- public 側の配布 Node
-- private 側の VPS / 商業運用 / `yonerai.com`
+- production-ready product
+- official cloud complete
+- live operations complete
+- full product completion
+- final Web product UI
+- persistent cross-device memory
+- full Discord product lane
+- signed production release
+- deployment-ready official runtime
 
-を明確に分けていく方針です。
+強く見せることより、事実境界を崩さないことを優先しています。
+
+### YonerAI の方向性
+
+YonerAI の目的は、AI を「どのモデルを使うか」だけで終わらせないことです。
+
+モデル、UI、実行環境、API provider が変わっても、ユーザー側の体験、操作単位、承認、監査、境界が崩れないようにすることを目指しています。
+
+長期的には、次の 3 モードを同じ思想で扱う構想です。
+
+| Mode | 概要 |
+| --- | --- |
+| Full Private Self-Host | ユーザーが runtime boundary を自分で持つ |
+| Official Hybrid Private | 公式側の統治とローカル / private runtime を契約で接続する |
+| Official Managed Cloud | 同じ体験を managed surface として提供する |
+
+### Build Philosophy
+
+- AI は便利さだけでなく、境界・承認・監査まで含めて設計する
+- public と private を混ぜない
+- 完成していないものを完成済みと書かない
+- model provider に依存しすぎない
+- ユーザーが自分の環境を失わない AI 体験を作る
+- 派手な demo より、再現可能な contract とテストを重視する
 
 ---
 
 ## 🌍 English Profile
 
-I build AI that lives on your own PC.
+I am building **YonerAI**, a provider-independent AI runtime foundation.
 
-My main project right now is **YonerAI**.
-It is a local-first AI system designed to run on a personal PC first, while still growing toward hybrid and platform-style deployment later.
+The goal is not just to switch between models.  
+The goal is to keep one reliable AI experience across official, local, and self-hosted environments.
 
-YonerAI is not just a chat UI. It currently includes:
+YonerAI is not just a Discord bot, and not just a model router.
 
-- a Discord-based runtime
-- web/admin surfaces
-- an optional Core process
-- relay foundations
-- tools / skills
-- approvals / audit boundaries
+It is being designed around:
 
-### Current Focus
+- provider independence
+- same experience across official / local / self-host
+- public / private / control-plane separation
+- API / CLI / Web / Discord surface boundaries
+- typed actions
+- approval gates
+- auditability
+- local Core API
+- mock / offline / loopback local LLM paths
+- self-evolution as approval-gated product intelligence
 
-- making the public YonerAI node cleaner and easier to distribute
-- separating the private VPS / commercial / official web side
-- building AI experiences that connect Discord, PC workflows, and operator-style execution
-- keeping both local-first and hybrid deployment paths viable
+### Current Public Status
+
+The public repository is not presented as a finished product.
+
+The current public direction is a contract-first runtime foundation with:
+
+- local Core API smoke path
+- mock / offline message contract
+- loopback-only local LLM conversation path
+- CLI client
+- temporary Web Chat MVP / smoke-demo surface
+- public-safe API / event / capability contracts
+- boundary-first architecture
+
+It does not claim production readiness, official cloud completion, live operations completion, or full product completion.
 
 ---
 
-## Public Projects
+## Flagship Project
 
 ### [YonerAI](https://github.com/YoneRai12/YonerAI)
-Local-first AI node / AI operator project.
 
-### [Minecraft-AI-Bedrock-Edition](https://github.com/YoneRai12/Minecraft-AI-Bedrock-Edition)
-Experiments around Minecraft and AI.
+Provider-independent AI execution foundation for keeping one reliable AI experience across official, local, and self-hosted runtimes.
 
-### [RTX5090-DebugSystem](https://github.com/YoneRai12/RTX5090-DebugSystem)
-GPU / runtime / debugging oriented experiments.
+Core themes:
 
-### [Discord-Measures-against-vandalism-YoneRai12](https://github.com/YoneRai12/Discord-Measures-against-vandalism-YoneRai12)
-Security / anti-vandalism bot code for Discord communities.
+- local-first AI runtime
+- provider-independent execution
+- same-experience architecture
+- contract-first API / CLI / Web surfaces
+- approval / audit / capability boundaries
+- public/private separation
+- self-evolution with evidence, tests, approval, and rollback
 
 ---
 
 ## Interests
 
+- AI runtime architecture
 - local-first AI
-- Discord-native AI experiences
-- AI agents / tool calling / approval / audit
-- Node + Relay + Core separation
-- Windows / VPS / hybrid deployment
-- practical, messy, real-world automation
+- provider-independent AI systems
+- AI agents / tool calling / approval gates
+- CLI / Web / API product surfaces
+- self-host / hybrid deployment
+- security-first automation
+- GitHub Actions / CI / release workflows
+- practical systems that actually run
 
 ---
 
@@ -153,21 +195,28 @@ Security / anti-vandalism bot code for Discord communities.
 | Area | Main Stack |
 | --- | --- |
 | Languages | Python, TypeScript / JavaScript |
-| AI / Runtime | LLM routing, tool calling, MCP, local-first AI |
-| Backend | FastAPI, WebSocket, relay patterns |
-| Frontend | Next.js, dashboard / web UI |
-| Infra / Ops | GitHub Actions, VPS, Cloudflare, deployment flows |
-| Other | Discord bots, automation, GPU / local runtime work |
+| AI / Runtime | LLM routing, provider abstraction, local LLM, tool calling |
+| Backend | FastAPI, HTTP APIs, SSE-style contracts, runtime services |
+| Frontend | Next.js, web chat, dashboard-style surfaces |
+| CLI | local command UX, smoke tests, developer tools |
+| Infra / Ops | GitHub Actions, Docker, Cloudflare, VPS / local runtime |
+| Other | Discord bots, automation, GPU / local environment work |
 
 ---
 
-## Build Philosophy
+## Selected Work
 
-- build things I actually want to use
-- think in terms of systems, not just wrappers
-- keep public and private boundaries explicit
-- prioritize working software
-- leave room for future derived products
+### [YonerAI](https://github.com/YoneRai12/YonerAI)
+
+My main project.  
+A provider-independent AI runtime foundation for official, local, and self-hosted AI experiences.
+
+### Other experiments
+
+- Minecraft and AI experiments
+- Discord safety / anti-vandalism automation
+- GPU / runtime / local AI debugging
+- Web and automation prototypes
 
 ---
 
